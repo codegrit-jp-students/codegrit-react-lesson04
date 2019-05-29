@@ -1,8 +1,8 @@
 # Error Boundary
 
-## Error処理用のイベント
+## エラー対応のためのイベント
 
-以下の2つのイベントはReact16から加わった新しいイベントで、レンダー時のエラー対応をうまく行うために紹介されました。
+React16では、レンダー時に発生するエラーへの対応を行うためのイベントが紹介されました。一般的にErrorBoundaryというコンポーネントを作成し、その中にエラーの発生しそうなコンポーネントを格納して利用します。
 
 ### static getDerivedStateFromError()
 
@@ -93,7 +93,7 @@ export default class extends Component {
 }
 ```
 
-### 5. componentDidCatch()
+### componentDidCatch()
 
 ```js
 componentDidCatch(error, info)
